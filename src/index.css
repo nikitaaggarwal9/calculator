@@ -1,13 +1,80 @@
 body {
   margin: 0;
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* calculator box */
+.cal-box {
+  background-color: black;
+  height: 38rem;
+  width: 22rem;
+  margin-top: 5rem;
+}
+
+/* display box */
+.dis-box {
+  height: 35%;
+  width: 100;
+}
+
+.dis-box div {
+  height: 50%;
+  width: 100%;
+  color: white;
+  font-size: 3rem;
+  box-sizing: border-box;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
+}
+
+.dis-box .exp {
+  font-size: 2.3rem;
+}
+
+/* button box */
+.btn-box {
+  height: 65%;
+  width: 100%;
+  background-color: rgb(31, 31, 31);
+}
+
+.btn-box .row {
+  height: 20%;
+}
+
+.row button {
+  height: 100%;
+  width: 25%;
+  background-color: rgb(43, 45, 45);
+  font-size: 1.6rem;
+  color: white;
+  border: none;
+}
+
+.row button span {
+  font-size: 1.5rem;
+}
+
+.row4 .eq {
+  background-color: rgb(203, 135, 10);
+}
+
+.row .opt {
+  color: rgb(203, 135, 10);
 }
