@@ -22,9 +22,13 @@ function App() {
       let totalArr = total.split(".");
 
       total = totalArr[0];
-      if (totalArr.length === 2 && totalArr[1].length > 2)
-        total += "." + totalArr[1].slice(0, 3);
+      if (totalArr.length === 2) {
+        total += ".";
 
+        if(totalArr[1].length > 2) total += totalArr[1].slice(0, 3);
+        else total += totalArr[1];
+      }
+        
       setRes(total);
     } catch (e) {
       if (e instanceof SyntaxError) {
